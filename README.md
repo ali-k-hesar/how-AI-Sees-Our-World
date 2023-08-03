@@ -54,6 +54,10 @@ Grad-CAM is an extension of CAM that addresses the limitation of CAM being appli
 
 the attention weights of the last layer for the CLS (classification) token in Vision Transformer (ViT) can be used to create an attention map similar to CAM and Grad-CAM in traditional convolutional neural networks (CNNs).
 
+In ViT, the CLS token is a special token appended at the beginning of the input sequence, and it serves as the aggregated representation of the entire image after the self-attention mechanism of the Transformer layers. The attention mechanism in ViT assigns weights to different tokens, including the CLS token, based on their relevance to each other in forming the final representation.
+
+To create an attention map for the CLS token, you can extract the attention weights corresponding to the CLS token from the last self-attention layer of the ViT model. These attention weights represent how much each patch in the input image attends to the CLS token. You can then use these attention weights to weight the embeddings of the patches, similar to CAM and Grad-CAM in CNNs.
+
 
 <div align="center">
   <p>
@@ -61,10 +65,6 @@ the attention weights of the last layer for the CLS (classification) token in Vi
   </p>
 </div>
 
-
-In ViT, the CLS token is a special token appended at the beginning of the input sequence, and it serves as the aggregated representation of the entire image after the self-attention mechanism of the Transformer layers. The attention mechanism in ViT assigns weights to different tokens, including the CLS token, based on their relevance to each other in forming the final representation.
-
-To create an attention map for the CLS token, you can extract the attention weights corresponding to the CLS token from the last self-attention layer of the ViT model. These attention weights represent how much each patch in the input image attends to the CLS token. You can then use these attention weights to weight the embeddings of the patches, similar to CAM and Grad-CAM in CNNs.
 
 ## Installation
 
