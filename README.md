@@ -4,13 +4,16 @@ In the quest to understand and interpret the decision-making process of deep lea
 
 ## Class Activation Map (CAM):
 
+
 <div align="center">
   <p>
     <img width="100%" src="https://github.com/ali-k-hesar/how-AI-Sees-Our-World/assets/85279433/88027b27-32e3-48b5-a9d5-1e580a3bc8c5"></a>
   </p>
 </div>
 
+
 CAM is a visualization method to highlight the discriminative regions of an image that contribute the most to a CNN's final classification decision. It works with CNN architectures that employ global average pooling (GAP) layers after the final convolutional layers. CAM calculates the class-specific activations by weighting the feature maps of the last convolutional layer based on their importance in predicting a specific class. This is done by taking a weighted sum of the feature maps, where the weights are determined by the learned weights of the fully connected layer responsible for classification. By overlaying the resulting heatmap on the original image, CAM visually indicates the regions that influenced the network's decision for a particular class.
+
 
 <div align="center">
   <p>
@@ -18,7 +21,9 @@ CAM is a visualization method to highlight the discriminative regions of an imag
   </p>
 </div>
 
+
 ## Grad-CAM (Gradient-weighted Class Activation Map):
+
 
 <div align="center">
   <p>
@@ -26,7 +31,9 @@ CAM is a visualization method to highlight the discriminative regions of an imag
   </p>
 </div>
 
+
 Grad-CAM is an extension of CAM that addresses the limitation of CAM being applicable only to networks with GAP layers. Grad-CAM is more versatile and can be applied to any CNN architecture, even those with multiple fully connected layers. It leverages the gradients flowing into the last convolutional layer to determine the importance of each feature map for a specific class. By computing the gradients of the loss function with respect to the feature maps, Grad-CAM effectively captures the importance of each spatial location in the CNN. Similar to CAM, Grad-CAM produces a heatmap that highlights the regions contributing the most to the classification decision. It provides more fine-grained visualizations, helping researchers and practitioners gain insights into the inner workings of CNNs and the features they use for predictions.
+
 
 <div align="center">
   <p>
@@ -34,7 +41,9 @@ Grad-CAM is an extension of CAM that addresses the limitation of CAM being appli
   </p>
 </div>
 
+
 ## Attention Map:
+
 
 <div align="center">
   <p>
@@ -42,13 +51,16 @@ Grad-CAM is an extension of CAM that addresses the limitation of CAM being appli
   </p>
 </div>
 
+
 the attention weights of the last layer for the CLS (classification) token in Vision Transformer (ViT) can be used to create an attention map similar to CAM and Grad-CAM in traditional convolutional neural networks (CNNs).
+
 
 <div align="center">
   <p>
     <img width="100%" src="https://github.com/ali-k-hesar/how-AI-Sees-Our-World/assets/85279433/e570be82-8bcc-42ad-a038-bb0514664957"></a>
   </p>
 </div>
+
 
 In ViT, the CLS token is a special token appended at the beginning of the input sequence, and it serves as the aggregated representation of the entire image after the self-attention mechanism of the Transformer layers. The attention mechanism in ViT assigns weights to different tokens, including the CLS token, based on their relevance to each other in forming the final representation.
 
