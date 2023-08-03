@@ -1,4 +1,4 @@
-# How AI sees our World
+# How AI sees our world
 
 In the quest to understand and interpret the decision-making process of deep learning models, attention maps have emerged as powerful tools. Vision Transformer (ViT) models, which revolutionized computer vision with their attention mechanisms, bring new dimensions to how AI sees and interprets our world. By combining the concepts of Class Activation Map (CAM) and Gradient-weighted Class Activation Map (Grad-CAM) with attention maps from ViT, we gain deeper insights into how these models perceive and analyze images.
 
