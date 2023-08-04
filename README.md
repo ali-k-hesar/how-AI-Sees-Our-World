@@ -1,4 +1,4 @@
-# How AI sees our world
+b# How AI sees our world
 
 In the quest to understand and interpret the decision-making process of deep learning models, attention maps have emerged as powerful tools. Vision Transformer (ViT) models, which revolutionized computer vision with their attention mechanisms, bring new dimensions to how AI sees and interprets our world. By combining the concepts of Class Activation Map (CAM) and Gradient-weighted Class Activation Map (Grad-CAM) with attention maps from ViT, we gain deeper insights into how these models perceive and analyze images.
 
@@ -47,7 +47,7 @@ Grad-CAM is an extension of CAM that addresses the limitation of CAM being appli
 
 <div align="center">
   <p>
-    <img width="100%" src="https://github.com/ali-k-hesar/how-AI-Sees-Our-World/assets/85279433/2682f1ed-4c91-4279-a6de-1ad103d90089"></a>
+    <img width="100%" src="https://github.com/ali-k-hesar/how-AI-Sees-Our-World/assets/85279433/eced2444-41fc-438c-bb5c-f87bebcea4b8"></a>
   </p>
 </div>
 
@@ -61,7 +61,7 @@ To create an attention map for the CLS token, you can extract the attention weig
 
 <div align="center">
   <p>
-    <img width="100%" src="https://github.com/ali-k-hesar/how-AI-Sees-Our-World/assets/85279433/e570be82-8bcc-42ad-a038-bb0514664957"></a>
+    <img width="100%" src="https://github.com/ali-k-hesar/how-AI-Sees-Our-World/assets/85279433/dd0b0693-9d5f-4244-9f00-3d49617986fe"></a>
   </p>
 </div>
 
