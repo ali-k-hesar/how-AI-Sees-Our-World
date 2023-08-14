@@ -74,13 +74,19 @@ To create an attention map for the CLS token, you can extract the attention weig
 git clone https://github.com/ali-k-hesar/how-AI-Sees-Our-World.git
 ```
 
-#### 2. Install the required dependencies:
+#### 2. change the directory:
+
+```shell
+cd pixel-shuffle-using-hand-tracking
+```
+
+#### 3. Install the required dependencies:
 
 ```shell
 pip install -r requirements.txt
 ```
 
-#### 3. Run the desired .ipynb file
+#### 4. Run the desired .ipynb file
 
 ## License
 
